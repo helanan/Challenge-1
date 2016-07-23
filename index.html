@@ -6,18 +6,21 @@
 		<title>Sign Up Form</title>
 		<link rel="stylesheet" href="css/normalize.css">
 		<link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel= 'stylesheet' type='text/css'>
-		<link rel="stylesheet" href="css/main.css"
+		<link rel="stylesheet" href="main.css"
 	</head>
 <body>
 
-<form action="index.html" method="post">
+<form action="index.html" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+
+<h1>Challenge #1</h1>
+
+<label for="range">Range of Items:</label>
+<input type="range" id="range" name="a" min="1" max="5">
+<br>
+<label for="quantity">Quantity of Items:</label>
+<input type="number" id="quantity" name="b" min="1" max="5">
+
 </form>
-
-<h1>Sign Up</h1>
-
-<input type="text" id="name" name="user_name">
-<input type="email" id="mail" name="user_email">
-<input type="button" id="password" name="user_password">
 
 </body>
 </html>
